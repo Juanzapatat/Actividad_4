@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registro De Productos y Usuario</title>
+</head>
+<body>
+    <h1>Registro De Productos</h1>
+    <form action="http://localhost:3002/api/productosyusuario" method="post">
+
+        <div><!--Nombre usuario-->
+            <label for="Nombre" >Nombre Usuario</label>
+            <input type="text" name="Nombre" id="Nombre" required>
+            </div>
+            
+            <div><!--apellido usuario-->
+                <label for="apellido" > Apellido</label>
+                <input type="text" name="apellido" id="apellido" required>
+                </div>
+                
+
+    <div><!--Nombre-->
+<label for="Nombre" >Nombre Del Elemento</label>
+<input type="text" name="Nombre" id="Nombre" required>
+</div>
+
+<div><!--Descripción-->
+    <label for="Descripción">Descripción</label>
+<input type="text" name="Descripción" id="Descripción" required>
+</div>
+
+<div><!--Precio-->
+<label for="Precio">Precio</label>
+<input type="number" name="Precio" id="Precio" min="0" required>
+</div>
+
+<div><!--categoría-->
+<label for="Categoría">Categoría</label>
+<select name="Categoría" id="Categoría" required>
+<option value="Electrónica">Electrónica</option>
+<option value="Ropa">Ropa</option>
+<option value="Alimentos">Alimentos</option>
+<option value="Del Hogar">Del Hogar</option>
+</select>
+</div>
+
+<div><!--Stock-->
+<label for="Stock">Cantidad</label>
+<input type="number" name="Stock" id="Stock" min="0" required>
+</div>
+
+<button type="submit">Enviar</button>
+</form>
+</body>
+</html>
+</body>
+</html>
